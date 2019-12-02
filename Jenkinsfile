@@ -8,9 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        withMaven(maven: 'Default') { 
-          sh "echo $COMMSERVER_BUILD_VERSION"
-        }
+        sh "echo $COMMSERVER_BUILD_VERSION"
       }  
     }    
   }
